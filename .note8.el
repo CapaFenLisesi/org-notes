@@ -15,7 +15,7 @@
 	 :auto-preamble nil
 	 :htmlize-source t ;this set source-code highlighting in html publish
 ;	 :org-html-head-include-default-style nil ;set default html style to nil
-	 :html-style:nil
+;	 :html-style:nil
 	 )
 ;;second,the static component
 	("org-static"
