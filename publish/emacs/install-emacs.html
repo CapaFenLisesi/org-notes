@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Install emacs and org-mode</title>
+<!-- 2014-01-24 五 16:05 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="[[mailto:hiluming@gmail.com][luming]]luming" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../css/style.css" />
+<style type="text/css">body{ max-width:75%; }</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Install emacs and org-mode</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">install</a>
+<ul>
+<li><a href="#sec-1-1">get emacs</a></li>
+<li><a href="#sec-1-2">check version</a></li>
+<li><a href="#sec-1-3">configure emacs</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">update org to the newest version</a>
+<ul>
+<li><a href="#sec-2-1">install and configure</a></li>
+<li><a href="#sec-2-2">check version and begin to use</a></li>
+</ul>
+</li>
+<li><a href="#sec-3">configure the color theme of emacs</a>
+<ul>
+<li><a href="#sec-3-1">download and install color-theme</a></li>
+<li><a href="#sec-3-2">configure solarized theme</a>
+<ul>
+<li><a href="#sec-3-2-1">fix the problem</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">install</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1">get emacs</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Usually we don't need the graphic mode, so we only need to install emacs 
+without x. To do this, typing:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-sh">sudo apt-get install emacs23-nox
+</pre>
+</div>
+<p>
+Also the newest version of emacs can be installed via ppa in ubuntu. Excute the 
+command in terminal:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-sh">sudo add-apt-repository ppa:cassou/emacs
+sudo apt-get update
+sudo apt-get install emacs24-nox
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2">check version</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+you can check version by typing:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-sh">emacs --version
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3">configure emacs</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+If you happen to install emacs with graphic component, when you type <i>emacs</i>,
+the default mode is just open the graphic window, which of course is not cool.
+You can enter <i>emacs -nw</i> to open it in the terminal. Another way to do this
+is just edit the <i>.bashrc</i> file with this:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-sh"><span style="color: #b0c4de;">alias</span> <span style="color: #8fbc8f;">emacs</span>=<span style="color: #ffa500;">'emacs -nw'</span>
+</pre>
+</div>
+<p>
+This will open emacs in terminal when typing <i>emacs</i>. If you really what to
+open emacs in GUI, you can do it by typing: <i>emacs23 -x</i>. 
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">update org to the newest version</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+You have entered into org-mode when you are editing a org file. By typing <b>M-x</b>
+and then <b>org-version RET</b>. You can see that the default version is very old.So
+we need to update it to the newest.
+</p>
+</div>
+<div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1">install and configure</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+The official guide says we should better stick to one install method. The method
+I choose it to use Org's git repository.
+First cd to the directory which you created to have org-mode installed. 
+</p>
+<div class="org-src-container">
+
+<pre class="src src-sh"><span style="color: #b0c4de;">cd</span> /usr/local/org-mode
+sudo git clone git://orgmode.org/org-mode.git
+<span style="color: #b0c4de;">cd</span> org-mode
+sudo make autoloads
+</pre>
+</div>
+<p>
+After installing, set the load-path in the file <i>.emacs</i>.
+</p>
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp">(add-to-list 'load-path <span style="color: #ffa500;">"/usr/local/org-mode/org-mode/lisp"</span>)
+(add-to-list 'load-path <span style="color: #ffa500;">"/usr/local/org-mode/org-mode/contrib/lisp"</span> t)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2">check version and begin to use</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Open and .org file and check if you have the new version installed.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">configure the color theme of emacs</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+The default color scheme in emacs is not very good. I like using solarized-theme,
+but even if the terminal is set to solarized-theme, emacs is not in the solarized
+mode.
+</p>
+</div>
+<div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1">download and install color-theme</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+In emacs23, we need first download the color-theme package:<a href="http://download.savannah.gnu.org/releases/color-theme/">color-theme</a>. Extract
+to any folder you like. Do the follow copy:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-sh">cp color-theme.el ~/emacs.d/lisp
+cp -r themes ~/emacs.d/lisp
+</pre>
+</div>
+<p>
+Modify ~/.emacs, add the following code:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp">(add-to-list 'load-pat <span style="color: #ffa500;">"~/.emacs.d/lisp"</span>)
+(<span style="color: PaleYellow;">require</span> '<span style="color: #7fffd4;">color-theme</span>)
+(color-theme-initialize)
+</pre>
+</div>
+<p>
+Type <i>eval-buffer</i> to make the change take effect. Try <b>M-x color-theme-select</b>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2">configure solarized theme</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+At this stage, you have many color-themes to choose. However, no solarized.
+You can download <a href="https://github.com/sellout/emacs-color-theme-solarized">solarized</a>, extract it to ~/.emacs.d/lisp . Add the load-path
+of solarized:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-emacs-lisp">(add-to-list 'load-path <span style="color: #ffa500;">"~/.emacs.d/lisp/emacs-color-theme-solarized"</span>)
+(<span style="color: PaleYellow;">require</span> '<span style="color: #7fffd4;">color-theme-solarized</span>)
+(color-theme-solarized-dark)
+</pre>
+</div>
+<p>
+Enter <b>M-x eval-buffer</b> to make change to take effect. However, the backgroud is gray
+instead of dark blue.
+</p>
+</div>
+<div id="outline-container-sec-3-2-1" class="outline-4">
+<h4 id="sec-3-2-1">fix the problem</h4>
+<div class="outline-text-4" id="text-3-2-1">
+<p>
+We can easily fix this problem by edit <i>.bashrc</i> file. Add this:
+</p>
+<div class="org-src-container">
+
+<pre class="src src-sh"><span style="color: #b0c4de;">export</span> <span style="color: #8fbc8f;">TERM</span>=<span style="color: #ffa500;">"xterm"</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: <a href="mailto:hiluming@gmail.com">luming</a></p>
+<p class="date">Created: 2014-01-24 五 16:05</p>
+<p class="creator"></p>
+<p class="validation"></p>
+</div>
+</body>
+</html>

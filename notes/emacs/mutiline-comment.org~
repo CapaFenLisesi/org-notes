@@ -1,0 +1,11 @@
+* comment
+> Select the region, cusor should at the begining of the last line.
+> C-x r t
+> Insert comment symbol
+* anti-comment
+> Select the region, cusor should right after the comment symbol
+> C-x r k
+
+
+
+[[file:~/Documents/org/notes/index.org][Back to the index]]

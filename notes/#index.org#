@@ -1,0 +1,9 @@
+* index
+** c programming
+** emacs and org-mode
+*** [[file:emacs/install-emacs.org][install emacs & org-mode]]
+*** [[file:emacs/mutiline-comment.org][emacs multi-line comment]]
+** fortran programming
+** life joy and complain
+** linux stuff
+** physics study

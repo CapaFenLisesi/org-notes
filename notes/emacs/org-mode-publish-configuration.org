@@ -1,0 +1,160 @@
+#+TITLE: Org-mode publish configuration
+#+SETUPFILE: ../css/level-1.css
+* Files and directory description
+** Main directory description
+I mainly follow the worg tutorial [[http://orgmode.org/worg/org-tutorials/org-publish-html-tutorial.html#fn.3][Publishing Org-mode files to HTML]]. This tutorial
+is old, not all suitable for the new versions(>8.0?). However, it is still a good
+place to start with.
+
+I have set up two folders, one is called =notes/=, the other is called =publish/=. They
+are in the same level, under =~/Documents/org/=. The folder =notes/= is called a
+=base-directory=, which contains all our  =.org= files; and the folder =publish/=,
+which is called a =publishing-directory=, consists of the published  =.html= files of our =.org= 
+files. =org= is our =base-extension=, meaning =org-mode= will find the files =*.org= to
+publish.
+
+** Other directories and files description
+Now suppose we have a sub-directory =emacs/=, in which our notes =install-emacs.org=
+and  =multiline-comment.org= are included. We need also to build sub-directory=img/=
+and =css/= to store our images and CSS codes.
+
+Now we need to have an index file in the =base-directory= and in each sub-directory.
+In the =base-directory=, we have and index file named =home.org=; while in the
+sub-directory  =emacs/=, we have an index file called =emacs.org=. So the index file
+=home.org= is used to link other index files in the sub-directory such as
+=emacs.org=; and  =emacs.org= is used to link the org files in =emacs/=
+sub-directory. Of course we can also link the index files in the sub-sub-directory in
+=emacs/= with =emacs.org=, if we need.
+
+** link the files  
+Now open =home.org=, and press *C-c C-l* to link a file, we want to link our index
+file =emacs.org=. Follow the instruction, and write:
+#+BEGIN_SRC org
+Link:file:emacs/emacs.org
+Description: emacs and org-mode
+#+END_SRC
+Also write the following to link your two org files in = emacs.org=:
+#+BEGIN_SRC org
+Link:file:install-emacs.org
+Description: install emacs
+Link:file:multiline-comment.org
+Description: multiline comment in emacs
+#+END_SRC
+Note that when linking a file, you are consider your directory where the index files
+sits as the root directory. So in the above index file =emacs.org=, you shall not to
+write like this:
+#+BEGIN_SRC org
+Link:file:emacs/install-emacs.org
+#+END_SRC
+* Html publish set up
+** Basic setup
+I build a file =.notes.el= to write my publish setup, following the tutorial, I have my
+publish setup as below. Note the publish function =org-publish-org-to-html= in the tutorial
+is old, don't use it. SEE [[http:orgmode.org/worg/org-8.0.html][Upgrading to Org 8.0]]. I copy the publish function from [[http:bzg.fr/blogging-from-emacs.html][Bastien]].
+#+BEGIN_SRC emacs-lisp
+(require 'org-publish)
+(setq org-export-with-section-numbers nil) ;this set the section with no number
+(setq org-html-validation-link nil) ;makes no validation below.
+(setq org-publish-project-alist
+
+      '(
+;;first, the notes component
+	("org-notes"
+	 :base-directory "~/Documents/org/notes/"   ;this is your org files root  directory
+	 :base-extension "org"                      
+	 :publishing-directory "~/Documents/org/publish/" ;your published html files is here.
+	 :recursive t          ;if it is t, you will have your sub-directory published.
+	 :publishing-function org-html-publish-to-html;The manual publish functionis old, use this one.
+	 :headline-levels 4             ; Just the default for this project.
+	 :auto-preamble t
+	 :htmlize-source t ;this set source-code highlighting in html publish
+	 :org-html-head-include-default-style nil ;set default html style to nil
+
+	 )
+;;second,the static component, static means we won't compile it, juse copy it.
+	("org-static"
+	 :base-directory "~/Documents/org/notes"
+	 :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf"
+	 :publishing-directory "~/Documents/org/publish/"
+	 :recursive t
+	 :publishing-function org-publish-attachment    ; treat the files with extension above as attachment.
+	 )
+;;third, the publish component
+	("org" :components ("org-notes" "org-static"))  ; our project name is org, consist of two parts.
+      ))
+
+#+END_SRC
+Now we have finished our publish set-up, just type *M-x* *eval-buffer* to let it
+take effect. Then Type: *M-x org-publish RET org* to publish your project. If
+every thing goes right, you will be able to see the html files in your folder
+=publish/=. 
+** Some details
+*org-publish* only publish your changed files by default. However, sometimes we
+have  made some changes in our global setup, such as =.note.el= and CSS styles. We can
+apply this global change to all our files by add a prefix:like *C-u* and then
+*M-x eval-buffer*.
+
+Every time you want publish a file when you newly open the emacs window, you
+need to evaluate the publish setup =.note.el= first. You can also put it into =.emacs=
+files, so you will not need to evaluate it everytime.
+* Play with CSS code
+** Files and description
+We can see that our published html is very "neat" in looking. We can make it
+more readable by using the CSS code. Myself don't know how to edit an CSS file,
+so I just bought it from [[https:gist.github.com/mpenet/3130635][Worg.css]](hope I did't voilent any license or so).
+
+We need be careful about the tutorial again, since =#+STYLE= is not used any
+more in version greater than 8.0. [[http:orgmode.org/worg/org-8.0.html#sec-8][SEE]].
+
+Here we go! We need to put =Worg.css= to the =css/= folder, I changed the name
+to =style.css=. In this folder, we need to put another two files named
+=level-0.css= and =level-1.css=, which is our css setting for the
+=base-directory= and sub-directory like =emacs/= in our example.
+
+Note we should be better not to use any relative directory as in the tutorial.
+Also we need not use =level-0.org=, using extension =.css= will make org-mode
+not to publish these css settings.
+** Setting up =.css= files.
+Now open level-0.css, write :
+#+BEGIN_SRC org
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+#+HTML_HEAD: <style type="text/css">body{ max-width:70%; }</style>
+#+CREATOR:
+#+AUTHOR: [[mailto:hiluming@gmail.com][luming]]
+#+END_SRC
+The first line is to use the =style.css= for =base-directory= files. The second
+line tells that the output html files have width 70% of the screen. The third
+line is used to diable the the creator showing in the bottom of the file. 
+
+Now open =level-1.css=, note the =style.css= directory is a slight different
+than =level-0.css=.
+#+BEGIN_SRC org
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/style.css" /> 
+#+HTML_HEAD: <style type="text/css">body{ max-width:70%; }</style>
+#+CREATOR:
+#+AUTHOR: [[mailto:hiluming@gmail.com][luming]]
+#+END_SRC
+
+So we can deduct if we have =level-2.css=, we need to modify the directory to:
+#+BEGIN_SRC org
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../css/style.css" /> 
+#+END_SRC
+** Use css in our files
+Add fllowing code into your =base-directory= org files, for example =home.org=:
+#+BEGIN_SRC org
+#+SETUPFILE: css/level-0.css
+#+END_SRC
+
+and this to your sub-directory files, for example:=emacs/emacs.org= and
+=emacs/install-emacs.org=:
+#+BEGIN_SRC org
+#+SETUPFILE: ../css/level-1.css
+#+END_SRC
+Also pay attention to the difference.
+* More to learn
+Next I plan to learn:
++ To make a site map, be able to link back to home
++ Publish to the website
++ TODO list or maybe agenda
++ latex support
++ May be a very little of emacs-lisp
