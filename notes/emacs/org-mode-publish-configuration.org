@@ -50,7 +50,7 @@ Link:file:emacs/install-emacs.org
 ** Basic setup
 I build a file =.notes.el= to write my publish setup, following the tutorial, I have my
 publish setup as below. Note the publish function =org-publish-org-to-html= in the tutorial
-is old, don't use it. SEE [[http:orgmode.org/worg/org-8.0.html][Upgrading to Org 8.0]]. I copy the publish function from [[http:bzg.fr/blogging-from-emacs.html][Bastien]].
+is old, don't use it. SEE [[http://orgmode.org/worg/org-8.0.html][Upgrading to Org 8.0]]. I copy the publish function from [[http://bzg.fr/blogging-from-emacs.html][Bastien]].
 #+BEGIN_SRC emacs-lisp
 (require 'org-publish)
 (setq org-export-with-section-numbers nil) ;this set the section with no number
@@ -69,7 +69,9 @@ is old, don't use it. SEE [[http:orgmode.org/worg/org-8.0.html][Upgrading to Org
 	 :auto-preamble t
 	 :htmlize-source t ;this set source-code highlighting in html publish
 	 :org-html-head-include-default-style nil ;set default html style to nil
-
+         :auto-sitemap t   ;sitemap
+	 :sitemap-filename "sitemap.org"
+	 :sitemap-title "Sitemap"
 	 )
 ;;second,the static component, static means we won't compile it, juse copy it.
 	("org-static"
@@ -101,10 +103,10 @@ files, so you will not need to evaluate it everytime.
 ** Files and description
 We can see that our published html is very "neat" in looking. We can make it
 more readable by using the CSS code. Myself don't know how to edit an CSS file,
-so I just bought it from [[https:gist.github.com/mpenet/3130635][Worg.css]](hope I did't voilent any license or so).
+so I just bought it from [[https://gist.github.com/mpenet/3130635][Worg.css]](hope I did't voilent any license or so).
 
 We need be careful about the tutorial again, since =#+STYLE= is not used any
-more in version greater than 8.0. [[http:orgmode.org/worg/org-8.0.html#sec-8][SEE]].
+more in version greater than 8.0. [[http://orgmode.org/worg/org-8.0.html#sec-8][SEE]].
 
 Here we go! We need to put =Worg.css= to the =css/= folder, I changed the name
 to =style.css=. In this folder, we need to put another two files named
@@ -116,11 +118,11 @@ Also we need not use =level-0.org=, using extension =.css= will make org-mode
 not to publish these css settings.
 ** Setting up =.css= files.
 Now open level-0.css, write :
-#+BEGIN_SRC org
+#+BEGIN_SRC css
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/style.css" /> 
 #+HTML_HEAD: <style type="text/css">body{ max-width:70%; }</style>
 #+CREATOR:
-#+AUTHOR: [[mailto:hiluming@gmail.com][luming]]
+#+AUTHOR: [[mailto:hiluming@gmail.com][luming]]  [[file:sitemap.html][_*Sitemap*_]] 
 #+END_SRC
 The first line is to use the =style.css= for =base-directory= files. The second
 line tells that the output html files have width 70% of the screen. The third
@@ -128,15 +130,17 @@ line is used to diable the the creator showing in the bottom of the file.
 
 Now open =level-1.css=, note the =style.css= directory is a slight different
 than =level-0.css=.
-#+BEGIN_SRC org
+#+BEGIN_SRC css
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/style.css" /> 
 #+HTML_HEAD: <style type="text/css">body{ max-width:70%; }</style>
 #+CREATOR:
-#+AUTHOR: [[mailto:hiluming@gmail.com][luming]]
+/*write AUTHOR in this way can add navagation below the pages */
+#+AUTHOR: [[mailto:hiluming@gmail.com][luming]]   [[file:../index.html][_*HOME*_]] 
+          [[file:index.html][_*UP*_]] [[file:../sitemap.html][_*SITEMAP*_]]
 #+END_SRC
 
 So we can deduct if we have =level-2.css=, we need to modify the directory to:
-#+BEGIN_SRC org
+#+BEGIN_SRC css
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../css/style.css" /> 
 #+END_SRC
 ** Use css in our files
@@ -153,8 +157,8 @@ and this to your sub-directory files, for example:=emacs/emacs.org= and
 Also pay attention to the difference.
 * More to learn
 Next I plan to learn:
-+ To make a site map, be able to link back to home
-+ Publish to the website
++ To make a site map, be able to link back to home *checked*
++ Publish to the website *checked*
 + TODO list or maybe agenda
 + latex support
 + May be a very little of emacs-lisp

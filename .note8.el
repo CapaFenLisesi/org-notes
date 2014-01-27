@@ -14,8 +14,10 @@
 	 :headline-levels 4             ; Just the default for this project.
 	 :auto-preamble nil
 	 :htmlize-source t ;this set source-code highlighting in html publish
-;	 :org-html-head-include-default-style nil ;set default html style to nil
-;	 :html-style:nil
+	 :org-html-head-include-default-style nil ;set default html style to nil
+	 :auto-sitemap t   ;sitemap
+	 :sitemap-filename "sitemap.org"
+	 :sitemap-title "Sitemap"
 	 )
 ;;second,the static component
 	("org-static"

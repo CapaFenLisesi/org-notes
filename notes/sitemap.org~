@@ -1,0 +1,12 @@
+#+TITLE: Sitemap
+
+   + emacs
+     + [[file:emacs/index.org][Emacs and org-mode]]
+     + [[file:emacs/install-emacs.org][Install emacs and org-mode]]
+     + [[file:emacs/multiline-comment.org][Multi-line comment and uncomment]]
+     + [[file:emacs/org-mode-publish-configuration.org][Org-mode publish configuration]]
+     + [[file:emacs/build-github-website.org][build a personal website on github]]
+   + life
+     + [[file:life/about-me.org][About me]]
+     + [[file:life/index.org][Life joy and complain]]
+   + [[file:index.org][Home]]
