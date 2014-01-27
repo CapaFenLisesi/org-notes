@@ -8,7 +8,7 @@
 	("org-notes"
 	 :base-directory "~/Documents/org/notes/"
 	 :base-extension "org"
-	 :publishing-directory "~/Documents/org/publish/"
+	 :publishing-directory "~/Documents/digdig.github.io"
 	 :recursive t
 	 :publishing-function org-html-publish-to-html
 	 :headline-levels 4             ; Just the default for this project.
@@ -21,7 +21,7 @@
 	("org-static"
 	 :base-directory "~/Documents/org/notes"
 	 :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf"
-	 :publishing-directory "~/Documents/org/publish/"
+	 :publishing-directory "~/Documents/digdig.github.io"
 	 :recursive t
 	 :publishing-function org-publish-attachment
 	 )
