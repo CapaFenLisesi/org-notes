@@ -157,8 +157,8 @@ and this to your sub-directory files, for example:=emacs/emacs.org= and
 Also pay attention to the difference.
 * More to learn
 Next I plan to learn:
-+ To make a site map, be able to link back to home *checked*
-+ Publish to the website *checked*
-+ TODO list or maybe agenda
-+ latex support
-+ May be a very little of emacs-lisp
+** DONE To make a site map, be able to link back to home 
+** DONE Publish to the website 
+** TODO GTD list or maybe agenda
+** TODO latex support
+** TODO May be a very little of emacs-lisp
