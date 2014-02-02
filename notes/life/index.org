@@ -1,3 +1,4 @@
 #+TITLE: Life joy and complain
 #+SETUPFILE: ../css/level-1.css
 * [[file:about-me.org][About me]]
+* [[file:%E5%A4%A7%E5%B9%B4%E5%88%9D%E4%BA%8C.org][大年初二记事]]

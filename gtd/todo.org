@@ -6,14 +6,14 @@
     DEADLINE: <2014-02-09 Sun -3d> SCHEDULED: <2014-02-07 Fri>
 *** TODO 《樋口一葉研究》 松坂俊夫著			    :@laptop:reserve:
     SCHEDULED: <2014-02-07 Fri> DEADLINE: <2014-02-09 Sun -3d>
-*** TODO Monte Carlo simulation in statistical 		    :@library:return:
+*** TODO Monte Carlo simulation in statistical		    :@library:return:
     DEADLINE: <2014-02-22 Sat -3d> SCHEDULED: <2014-02-19 Wed>
     :PROPERTIES:
     :SN: O414.2/B511.4
     :TITLE: Monte Carlo simulation in statistical physics : an introduction
     :AUTHOR: Binder, K. (Kurt), 1944- 
     :END:
-*** TODO A guide to Monte Carlo simulation 		    :@library:return:
+*** TODO A guide to Monte Carlo simulation		    :@library:return:
     DEADLINE: <2014-02-22 Sat -3d> SCHEDULED: <2014-02-19 Wed>
     :PROPERTIES:
     :AUTHOR:Landau, David P.
@@ -37,7 +37,6 @@
     :PROPERTIES:
     :SN: I313.064/15/J
     :END:
-
 ** Linux
 ** Program
 ** Shopping

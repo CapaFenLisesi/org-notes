@@ -9,4 +9,5 @@
    + life
      + [[file:life/about-me.org][About me]]
      + [[file:life/index.org][Life joy and complain]]
+     + [[file:life/大年初二.org][大年初二的事儿]]
    + [[file:index.org][Home]]
