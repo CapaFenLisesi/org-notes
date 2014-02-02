@@ -68,3 +68,11 @@ Finally you can push all your souce code to GitHub:
 #+BEGIN_SRC sh
 git push
 #+END_SRC
+* Using =git fetch= to sync local and server
+I encountered this situation: sometimes I delete the local publish folder by
+mistake, when I restore it from the [[http://jianguoyun.com][Nutstore]], but can't upload it to git server
+any more. The way I fix this is as follow:
++ init the publish folder
++ add remote repo
++ git fetch
++ git add commit and push

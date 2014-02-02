@@ -159,6 +159,10 @@ Also pay attention to the difference.
 Next I plan to learn:
 ** DONE To make a site map, be able to link back to home 
 ** DONE Publish to the website 
-** TODO GTD list or maybe agenda
-** TODO latex support
+** DONE GTD list or maybe agenda
+   CLOSED: [2014-02-02 Sun 15:25]
+   - CLOSING NOTE [2014-02-02 Sun 15:25] \\
+     Got the basic idea, need to read the manual more carefully
+** DONE latex support
+   CLOSED: [2014-02-02 Sun 15:25]
 ** TODO May be a very little of emacs-lisp

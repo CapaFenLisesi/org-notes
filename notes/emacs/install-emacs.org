@@ -28,7 +28,14 @@ is just edit the /.bashrc/ file with this:
 alias emacs='emacs -nw'
 #+end_src
 This will open emacs in terminal when typing /emacs/. If you really what to
-open emacs in GUI, you can do it by typing: /emacs23 -x/. 
+open emacs in GUI, you can do it by typing: /emacs23 -x/.
+
+
+After all, we won't use the menu bar in emacs-nox, so hide it:
+#+BEGIN_SRC emacs-lisp
+(menu-bar-mode 0)
+#+END_SRC 
+This is copy from [[http://bzg.fr/emacs-strip-tease.html][bzg-emacs-naked]].
 * update org to the newest version
 You have entered into org-mode when you are editing a org file. By typing *M-x*
 and then *org-version RET*. You can see that the default version is very old.So

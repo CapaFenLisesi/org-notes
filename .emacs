@@ -9,6 +9,9 @@
 (color-theme-arjen)
 
 
+;;hide the menu bar
+(menu-bar-mode 0)
+
 ;;syntax highlight
 (setq org-src-fontify-natively t)
 (require 'htmlize)
