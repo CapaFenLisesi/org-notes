@@ -2,10 +2,12 @@
 ** Physics
 ** Reading
 ** Borrow and return
-*** TODO 《私語り樋口一葉》 西川祐子著			    :@laptop:reserve:
-    DEADLINE: <2014-02-09 Sun -3d> SCHEDULED: <2014-02-07 Fri>
-*** TODO 《樋口一葉研究》 松坂俊夫著			    :@laptop:reserve:
-    SCHEDULED: <2014-02-07 Fri> DEADLINE: <2014-02-09 Sun -3d>
+*** DONE 《私語り樋口一葉》 西川祐子著			    :@laptop:reserve:
+    CLOSED: [2014-02-05 Wed 14:05] DEADLINE: <2014-02-09 Sun -3d> SCHEDULED: <2014-02-07 Fri>
+    - CLOSING NOTE [2014-02-05 Wed 14:05]
+*** DONE 《樋口一葉研究》 松坂俊夫著			    :@laptop:reserve:
+    CLOSED: [2014-02-05 Wed 14:06] SCHEDULED: <2014-02-07 Fri> DEADLINE: <2014-02-09 Sun -3d>
+    - CLOSING NOTE [2014-02-05 Wed 14:06]
 *** TODO Monte Carlo simulation in statistical		    :@library:return:
     DEADLINE: <2014-02-22 Sat -3d> SCHEDULED: <2014-02-19 Wed>
     :PROPERTIES:
@@ -38,17 +40,27 @@
     :SN: I313.064/15/J
     :END:
 ** Linux
+*** Ubuntu
+**** TODO Uninstall thundermail empathy gwlbeler indicator-messages :@dorm:linux:
+**** TODO install gtalk, guake terminal				:@dorm:linux:
 ** Program
-*** TODO Learn OpenMp[0%]
-    DEADLINE: <2014-02-07 Fri -3d>
+*** CANCELED Learn OpenMp[0%]				     :fortran:openmp:
+    CLOSED: [2014-02-04 Tue 14:11] DEADLINE: <2014-02-07 Fri -3d>
+    - State "CANCELED"   from "TODO"       [2014-02-04 Tue 14:11] \\
+      The document chosen is too old, I need the uptodate material. I need it to be 
+      clear and not misleading. Maybe I'll comeback later to this.
 **** IN-PROGRESS read 20 pages of OMP notes
-**** TODO try the directives there
+**** TODO try the directives there [/]
+***** TODO try NESTED parallel sentinel
 **** TODO read 20 pages of OMP notes
 **** TODO try the directives there
 **** TODO read 20 pages of OMP notes
 **** TODO try the directives there
 **** TODO read 15 pages of OMP notes
 **** TODO try the directives there
+*** TODO read Using OpenMP	[0%]			     :fortran:openmp:
+**** IN-PROGRESS read first 50 pages
+**** IN-PROGRESS try everthing there
 ** Shopping
 ** Travel
 *** TODO pick up tickets, bring ID and student card, money	     :travel:
@@ -58,6 +70,18 @@
     :T44:      compartment 17, seat 12
     :END:
     <2014-02-07 Fri 17:30>--<2014-02-08 Sat 09:00>
+*** TODO Leave Beijing to Nanjing				     :travel:
+    SCHEDULED: <2014-02-13 Thu 21:41>
+    :PROPERTIES:
+    :T65:      7-14-up
+    :END:
+*** TODO Leave Nanjing to Beijing				     :travel:
+    SCHEDULED: <2014-02-16 Sun 22:48>
+    :PROPERTIES:
+    :T66:      10-17-middle
+    :END:
+*** TODO Pick up two tickets				       :@meal:travel:
+    DEADLINE: <2014-02-12 Wed>
 * Special Dates
 ** Birthday
 *** TODO Baba's birthday <1959-03-03 Tue>

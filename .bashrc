@@ -108,3 +108,18 @@ fi
 #source /opt/intel/composer_xe_2013_sp1.1.106/bin/ifortvars.sh intel64
 source /opt/intel/composer_xe_2013_sp1.1.106/bin/compilervars.sh intel64
 export TERM="xterm-256color"
+#some quick access to folder:
+o="/home/luming/Documents/org/"
+g="/home/luming/Documents/org/gtd/"
+n="/home/luming/Documents/org/notes/"
+n_lin="/home/luming/Documents/org/notes/linux/"
+n_lif="/home/luming/Documents/org/notes/life/"
+n_e="/home/luming/Documents/org/notes/emacs/"
+n_f="/home/luming/Documents/org/notes/fortran/"
+n_p="/home/luming/Documents/org/notes/physics/"
+n_lat="/home/luming/Documents/org/notes/latex/"
+p="/home/luming/Documents/programs/"
+p_m="/home/luming/Documents/programs/mc/"
+p_l="/home/luming/Documents/programs/lib/"
+p_t="/home/luming/Documents/programs/test/"
+p_o="/home/luming/Documents/programs/omp/"
