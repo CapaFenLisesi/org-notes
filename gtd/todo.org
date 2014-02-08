@@ -120,4 +120,3 @@
     :OTHER: [[file:attach/vpn.png][linux capture]]
     :END:
 *** 宽带链接账户@home 02901019115
-*** ubuntu software center: Xz575876zX
