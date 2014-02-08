@@ -6,8 +6,14 @@
      + [[file:emacs/multiline-comment.org][Multi-line comment and uncomment]]
      + [[file:emacs/org-mode-publish-configuration.org][Org-mode publish configuration]]
      + [[file:emacs/build-github-website.org][build a personal website on github]]
+   + fortran
+     + [[file:fortran/interface.org][Fortran interface block]]
+     + [[file:fortran/index.org][Fortran notes]]
    + life
      + [[file:life/about-me.org][About me]]
      + [[file:life/index.org][Life joy and complain]]
      + [[file:life/da-nian-chu-er.org][大年初二的事儿]]
+   + linux
+     + [[file:linux/index.org][Linux stuff]]
+     + [[file:linux/tips.org][Some linux tips]]
    + [[file:index.org][Home]]

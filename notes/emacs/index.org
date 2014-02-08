@@ -4,3 +4,4 @@
 * [[file:multiline-comment.org][Multiline-comment]]
 * [[file:org-mode-publish-configuration.org][Org-mode publish configuration]]
 * [[file:build-github-website.org][Build a personal website on github]]
+* [[file:emacs-notes.org][Emacs notes]]

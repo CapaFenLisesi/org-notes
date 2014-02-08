@@ -143,6 +143,10 @@ So we can deduct if we have =level-2.css=, we need to modify the directory to:
 #+BEGIN_SRC css
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../css/style.css" /> 
 #+END_SRC
+
+
+Org-publish will add a timestamp at end of our file by default, if you want to disable
+this, just add =#+OPTIONS: timestamp:nil= to the =level-N.css= files.
 ** Use css in our files
 Add fllowing code into your =base-directory= org files, for example =home.org=:
 #+BEGIN_SRC org

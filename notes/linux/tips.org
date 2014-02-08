@@ -1,3 +1,5 @@
+#+SETUPFILE: ../css/level-1.css
+#+TITLE: Some linux tips
 * Shortcuts for ubuntu
 ** Chrome excute path
 just type =chrome://version= 
@@ -13,7 +15,7 @@ Config =/etc/lightdm/lightdm.conf=, add this line =user-session=ubuntu-2d=. Or u
 ** Quick access to folders
 Set the environment variable in =.bashrc= files, for example:
 #+BEGIN_SRC sh
-n="/home/luming/Documents/org/notes/
+n="/home/luming/Documents/org/notes/"
 cd $n
 #+END_SRC
 To quick access to current folder, set:

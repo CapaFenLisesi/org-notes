@@ -2,3 +2,4 @@
 #+SETUPFILE: ../css/level-1.css
 * [[file:about-me.org][About me]]
 * [[file:da-nian-chu-er.org][大年初二记事]]
+* [[file:yi-xie-gan-xiang.org][离家前两天的一些感想]]

@@ -3,11 +3,11 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<title>Install emacs and org-mode</title>
-<!-- 2014-01-29 Wed 14:32 -->
+<title>install-emacs</title>
+<!-- 2014-01-21 Tue 01:09 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
-<meta  name="author" content="[[file:../life/about-me.html][/luming/]]  /luming/luming[[file:../index.html][_*HOME*_]]  _*HOME*_*HOME*HOME[[file:index.html][_*UP*_]] _*UP*_*UP*UP[[file:../sitemap.html][_*SITEMAP*_]]_*SITEMAP*_*SITEMAP*SITEMAP" />
+<meta  name="author" content="luming" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center; }
@@ -88,8 +88,6 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="../css/style.css" />
-<style type="text/css">body{ max-width:75%; }</style>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -139,7 +137,7 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Install emacs and org-mode</h1>
+<h1 class="title">install-emacs</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
@@ -351,29 +349,15 @@ We can easily fix this problem by edit <i>.bashrc</i> file. Add this:
 <pre class="src src-sh"><span style="color: #b0c4de;">export</span> <span style="color: #8fbc8f;">TERM</span>=<span style="color: #ffa500;">"xterm"</span>
 </pre>
 </div>
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'mingswiki'; // required: replace example with your forum shortname
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 </div>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="author">Author: <a href="../life/about-me.html"><i>luming</i></a>  <a href="../index.html"><span class="underline"><b>HOME</b></span></a>  <a href="index.html"><span class="underline"><b>UP</b></span></a> <a href="../sitemap.html"><span class="underline"><b>SITEMAP</b></span></a></p>
-<p class="date">Created: 2014-01-29 Wed 14:32</p>
-<p class="creator"></p>
+<p class="author">Author: luming</p>
+<p class="date">Created: 2014-01-21 Tue 01:09</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.3.1 (<a href="http://orgmode.org">Org</a> mode 8.2.5f)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

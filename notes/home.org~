@@ -1,0 +1,8 @@
+#+SETUPFILE: css/level-0.css
+* COMMENT #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="css/style.css" />
+* c programming
+* [[file:emacs/emacs.org][emacs and org-mode]]
+* fortran programming
+* life joy and complain
+* linux stuff
+* physics study

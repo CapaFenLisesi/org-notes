@@ -1,4 +1,4 @@
-#+SETUPFILE: ../css/level-1.org
+#+SETUPFILE: ../css/level-1.css
 * comment
 > Select the region, cusor should at the begining of the last line.
 > C-x r t

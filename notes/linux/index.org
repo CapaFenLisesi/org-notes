@@ -1,0 +1,4 @@
+#+SETUPFILE: ../css/level-1.css
+#+TITLE: Linux stuff
+* [[file:tips.org][Some linux tips]]
+* [[file:chromium-flash.org][Using chrome new flash version in chromium]]

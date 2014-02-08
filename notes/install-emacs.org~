@@ -1,6 +1,3 @@
-#+TITLE: Install emacs and org-mode
-#+SETUPFILE: ../css/level-1.css
-* COMMENT #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/style.css" />
 * install
 ** get emacs
 Usually we don't need the graphic mode, so we only need to install emacs 
@@ -85,4 +82,3 @@ We can easily fix this problem by edit /.bashrc/ file. Add this:
 #+begin_src sh
 export TERM="xterm"
 #+end_src
-

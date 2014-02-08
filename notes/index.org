@@ -1,9 +1,9 @@
 #+SETUPFILE: css/level-0.css
 #+TITLE: Home
 * [[file:life/about-me.org][About me]]
-* C programming
+* [[file:c/index.org][C programming]]
 * [[file:emacs/index.org][Emacs and org-mode]]
-* Fortran programming
+* [[file:fortran/index.org][Fortran programming]]
 * [[file:life/index.org][Life joy and complain]]
-* Linux stuff
+* [[file:linux/index.org][Linux stuff]]
 * Physics study

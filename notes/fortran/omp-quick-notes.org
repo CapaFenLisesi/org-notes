@@ -1,0 +1,75 @@
+#+TITLE: OpenMP quick notes
+#+DATE:<2014-02-07 Fri 14:41>
+#+SETUPFILE: ../css/level-1.css
+* THREADS
+Set threads number going to use:
+#+BEGIN_SRC sh
+export OMP_NUM_THREADS=4
+#+END_SRC
+
+You can also set the number of threads in the program:
+#+BEGIN_SRC fortran
+OMP_SET_NUM_THREADS(nthreads)
+#+END_SRC
+
+
+Get number of threads in the system:
+#+BEGIN_SRC fortran
+OMP_GET_NUM_THREADS()
+#+END_SRC
+note this function returns the threads number in using. So  when use this function 
+in serial part, you will get 1; when you are using in parallel part, it will
+return the threads number using in parallel region. 
+
+
+Get the thread number
+#+BEGIN_SRC fortran
+OMP_GET_THREAD_NUM() !this return the thread ID.
+#+END_SRC
+
+* Sample program
+Here is a sample program:
+#+BEGIN_SRC fortran
+PROGRAM omp_do
+IMPLICIT NONE
+INTEGER:: n,i,OMP_GET_THREAD_NUM,OMP_GET_NUM_THREADS,OMP_GET_NUM_PROCS,OMP_GET_MAX_THREADS
+INTEGER,PARAMETER::nthreads=6
+CALL OMP_SET_NUM_THREADS(nthreads)
+!$OMP PARALLEL SHARED(n) PRIVATE(i)
+!$OMP DO
+DO i=1,9
+!$ WRITE(*,*) "Thread ",OMP_GET_THREAD_NUM(),"executes loop iteration ", i
+END DO
+!$OMP END DO
+!$ WRITE(*,*) "The number of threads using:",OMP_GET_NUM_THREADS(),"num of procs:",OMP_GET_NUM_PROCS(),"Max threads num:",OMP_GET_MAX_THREADS()
+!$OMP END PARALLEL
+!$ WRITE(*,*) "The number of threads using:",OMP_GET_NUM_THREADS(),"num of procs:",OMP_GET_NUM_PROCS(),"Max threads num:",OMP_GET_MAX_THREADS()
+END PROGRAM omp_do
+#+END_SRC
+
+The corressponding result is:
+#+BEGIN_QUOTE
+Thread            2 executes loop iteration            5
+ Thread            2 executes loop iteration            6
+ Thread            1 executes loop iteration            3
+ Thread            1 executes loop iteration            4
+ Thread            3 executes loop iteration            7
+ Thread            0 executes loop iteration            1
+ Thread            0 executes loop iteration            2
+ Thread            4 executes loop iteration            8
+ Thread            5 executes loop iteration            9
+ The number of threads using:           6 num of procs:          12 
+ Max threads num:           6
+ The number of threads using:           6 num of procs:          12 
+ Max threads num:           6
+ The number of threads using:           6 num of procs:          12 
+ Max threads num:           6
+ The number of threads using:           6 num of procs:          12 
+ Max threads num:           6
+ The number of threads using:           6 num of procs:          12 
+ Max threads num:           6
+ The number of threads using:           6 num of procs:          12 
+ Max threads num:           6
+ The number of threads using:           1 num of procs:          12 
+ Max threads num:           6
+#+END_QUOTE

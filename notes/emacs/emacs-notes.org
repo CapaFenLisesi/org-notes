@@ -1,0 +1,5 @@
+#+TITLE: Emacs notes
+#+SETUPFILE: ../css/level-1.css
+#+DATE: <2014-02-06 Thu 04:25>
+* Emacs multiple windows control
+[[http://www.cnblogs.com/robertzml/archive/2010/03/24/1692737.html][Here]] is a very good artile to expain how to manipulate multiple windows in Emacs. 
