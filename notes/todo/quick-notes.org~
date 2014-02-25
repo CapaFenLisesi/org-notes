@@ -1,0 +1,9 @@
+#+TITLE: Quick notes
+#+SETUPFILE: ../css/level-1.css
+* Physics
+** Kramers' theorem
+Given a Hamiltonian with time-reversal symmetry, if a state is the Hamiltonian's eigenstate, then its time
+reversal state is also an eigenstate of the Hamiltonian with the same eigenvalue; besides, the two states 
+is orthogonal.
+
+* Linux

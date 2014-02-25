@@ -1,0 +1,7 @@
+#+TITLE: Physics study
+#+SETUPFILE: ../css/level-1.css
+* [[file:AR-wiki.org][Andreev reflection on wiki]]
+* [[file:superconductivity-notes.org][Notes on superconductivity study]]
+* [[file:questions.org][Questions need to consider]]
+* [[file:quick-notes.org][Quick notes]]
+* [[file:read-later-physics.org][Read later(physics)]]

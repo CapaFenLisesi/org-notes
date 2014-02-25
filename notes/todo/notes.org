@@ -1,0 +1,6 @@
+#+TITLE: Things to do tonight
+#+SETUPFILE: ../css/level-1.css
+* CANCELED  Push Qi and Zhang's paper to kindle
+* DONE Publish website
+* TODO Write the README file
+* TODO Learn tmux copy paste

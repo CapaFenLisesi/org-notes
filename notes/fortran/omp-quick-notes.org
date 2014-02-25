@@ -48,28 +48,28 @@ END PROGRAM omp_do
 #+END_SRC
 
 The corressponding result is:
-#+BEGIN_QUOTE
+#+BEGIN_SRC fortran
 Thread            2 executes loop iteration            5
- Thread            2 executes loop iteration            6
- Thread            1 executes loop iteration            3
- Thread            1 executes loop iteration            4
- Thread            3 executes loop iteration            7
- Thread            0 executes loop iteration            1
- Thread            0 executes loop iteration            2
- Thread            4 executes loop iteration            8
- Thread            5 executes loop iteration            9
- The number of threads using:           6 num of procs:          12 
- Max threads num:           6
- The number of threads using:           6 num of procs:          12 
- Max threads num:           6
- The number of threads using:           6 num of procs:          12 
- Max threads num:           6
- The number of threads using:           6 num of procs:          12 
- Max threads num:           6
- The number of threads using:           6 num of procs:          12 
- Max threads num:           6
- The number of threads using:           6 num of procs:          12 
- Max threads num:           6
- The number of threads using:           1 num of procs:          12 
- Max threads num:           6
-#+END_QUOTE
+Thread            2 executes loop iteration            6
+Thread            1 executes loop iteration            3
+Thread            1 executes loop iteration            4
+Thread            3 executes loop iteration            7
+Thread            0 executes loop iteration            1
+Thread            0 executes loop iteration            2
+Thread            4 executes loop iteration            8
+Thread            5 executes loop iteration            9
+The number of threads using:           6 num of procs:          12 
+Max threads num:           6
+The number of threads using:           6 num of procs:          12 
+Max threads num:           6
+The number of threads using:           6 num of procs:          12 
+Max threads num:           6
+The number of threads using:           6 num of procs:          12 
+Max threads num:           6
+The number of threads using:           6 num of procs:          12 
+Max threads num:           6
+The number of threads using:           6 num of procs:          12 
+Max threads num:           6
+The number of threads using:           1 num of procs:          12 
+Max threads num:           6
+#+END_SRC

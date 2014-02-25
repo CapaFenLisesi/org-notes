@@ -66,7 +66,7 @@ git remote -v
 #+END_SRC
 Finally you can push all your souce code to GitHub:
 #+BEGIN_SRC sh
-git push
+git push -u origin master
 #+END_SRC
 * Using =git fetch= to sync local and server
 I encountered this situation: sometimes I delete the local publish folder by

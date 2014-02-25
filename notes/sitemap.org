@@ -1,19 +1,38 @@
 #+TITLE: Sitemap
 
+   + c
+     + [[file:c/c-notes.org][C notes]]
+     + [[file:c/index.org][C programming]]
    + emacs
      + [[file:emacs/index.org][Emacs and org-mode]]
+     + [[file:emacs/emacs-notes.org][Emacs notes]]
      + [[file:emacs/install-emacs.org][Install emacs and org-mode]]
      + [[file:emacs/multiline-comment.org][Multi-line comment and uncomment]]
      + [[file:emacs/org-mode-publish-configuration.org][Org-mode publish configuration]]
+     + [[file:emacs/read-later.org][Read later articles]]
      + [[file:emacs/build-github-website.org][build a personal website on github]]
    + fortran
      + [[file:fortran/interface.org][Fortran interface block]]
      + [[file:fortran/index.org][Fortran notes]]
+     + [[file:fortran/omp-quick-notes.org][OpenMP quick notes]]
    + life
      + [[file:life/about-me.org][About me]]
      + [[file:life/index.org][Life joy and complain]]
      + [[file:life/da-nian-chu-er.org][大年初二的事儿]]
+     + [[file:life/yi-xie-gan-xiang.org][离家前两天的一些感想]]
    + linux
+     + [[file:linux/install-skype-no-ads.org][Install skype no ads version]]
+     + [[file:linux/chromium-flash.org][Let chromium uses chrome's flash]]
      + [[file:linux/index.org][Linux stuff]]
      + [[file:linux/tips.org][Some linux tips]]
-   + [[file:index.org][Home]]
+   + physics
+     + [[file:physics/AR-wiki.org][A wiki article about Andreev Reflection and Crossed Andreev Reflection]]
+     + [[file:physics/superconductivity-notes.org][Notes on superconductivity]]
+     + [[file:physics/index.org][Physics study]]
+   + todo
+     + [[file:todo/articles.org][Article to read]]
+     + [[file:todo/questions.org][Questions to think]]
+     + [[file:todo/quick-notes.org][Quick notes]]
+     + [[file:todo/index.org][TODOs]]
+     + [[file:todo/notes.org][Things to do tonight]]
+   + [[file:index.org][A Ming's website]]

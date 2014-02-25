@@ -1,0 +1,30 @@
+#+TITLE: Article to read
+#+SETUPFILE: ../css/level-1.css
+* Physics
+** TODO [[http://physics.stackexchange.com/questions/29469/spontaneous-time-reversal-symmetry-breaking#][Spontaneous Time Reversal Symmetry Breaking]] [90%]
+*** TODO Need further understand the hamiltonian.
+** TODO [[http://scitation.aip.org/content/aip/magazine/physicstoday/article/63/1/10.1063/1.3293411][The quantum spin Hall effect and topological insulators]] [50%]
+*** DONE First half
+*** TODO Second half
+** CANCELED [[http://physics.aps.org/articles/v3/85][Viewpoint: Breaking time reversal symmetry with light]]
+Reason: not very much relevant
+** DONE [[http://en.wikipedia.org/wiki/Persistent_current][Persistent current wiki]]
+   why this is an example of spontanous time-reversal symmetry breaking? It is not.
+** TODO [[http://iopscience.iop.org/0038-5670/19/6/R02/pdf/0038-5670_19_6_R02.pdf][HgTe band structure]]
+** DONE [[http://physics.stackexchange.com/questions/61579/what-is-the-mathematical-reason-for-topological-edge-states][What is the mathematical reason for topological edge states?]]
+** TODO [[http://physics.stackexchange.com/questions/47174/what-conductance-is-measured-for-the-quantum-spin-hall-state-when-the-hall-condu][What conductance is measured for the quantum spin Hall state when the Hall conductance vanishes]]
+** TODO [[http://citeseerx.ist.psu.edu/viewdoc/download%3Frep%3Drep1&type%3Dpdf&doi%3D10.1.1.205.7310][JOSEPHSON BEHAVIOR IN SMALL NORMAL ONE-DIMENSIONAL RINGS]]
+The k specifying the Bloch state in fig. 2 is determined by the flux \Phi  through the ring, evaluated
+modulo  the flux quantum \Phi_0, = fit/e. The specific relationship is k = -k_0 \Phi/\Phi_0. where k_0 is
+the zone width.
+** TODO Bloch oscilation
+* Linux
+** TODO [[https://linuxtoy.org/archives/ubuntu-bluetooth-guide.html][Play with ubuntu bluetooth]]
+** DONE [[http://yp.oss.org.cn/blog/show_resource.php%3Fresource_id%3D801][A tutorial about tmux]]
+** DONE 修改putty分割线的乱码问题
+这主要是由于putty 的语言编码不对造成的。进入 =windows= -> =translation= ，编码选择 =utf-8= 就行。如果其
+他终端也有乱码，尝试使用echo $LANG 看看是不是正确的编码。
+
+* Cellphone
+** DONE Black Berry
+*** [[http://www.bjxiaoc.cn/index.php/archives/629][黑莓快捷键]]

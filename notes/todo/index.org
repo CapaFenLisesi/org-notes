@@ -1,0 +1,6 @@
+#+TITLE: TODOs
+#+SETUPFILE: ../css/level-1.css
+* [[file:questions.org][Questions to think]]
+* [[file:articles.org][Articles to read]]
+* [[file:notes.org][Things to do tonight]]
+* [[file:quick-notes.org][Quick notes]]

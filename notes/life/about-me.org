@@ -1,6 +1,6 @@
 #+TITLE: About me
 #+SETUPFILE: ../css/level-1.css
-* Education backgroud
+* Educational backgroud
 I obtain my bachelor degree at [[http://physics.nju.edu.cn][department of physics]], [[http://www.nju.edu.cn][Nanjing
 University]] from 2008 to 2012.
 Now I am a second year graduate student at [[http://icqm.pku.edu.cn][ICQM]], [[http://www.pku.edu.cn][Peking University]]. My
@@ -12,6 +12,6 @@ my and your reference sometime. This site is created using [[http://www.gnu.org/
 and [[http://orgmode.org/][Org mode]], the source code is available on my [[https://github.com/digdig/org-notes][GitHub page]].
 
 * Contact me
-I am a google fan, so you can add me on google plus; my google plus
-name is _hiluming_. Also you can send me email, my email address: hiluming@gmail.com.
+You can add me on google plus or skype; the user name of both is *_hiluming_*.
+You can also send me email, my email address: *_hiluming@gmail.com_*.
 Feel free to contact me.

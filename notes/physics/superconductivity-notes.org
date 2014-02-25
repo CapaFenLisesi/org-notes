@@ -1,0 +1,14 @@
+#+TITLE: Notes on superconductivity
+#+SETUPFILE: ../css/level-1.css
+This entry will record my notes on superconductivity. The learning material is from the website, [[http://ltl.tkk.fi/opetus/supertheory/tfy-3.491/TheorySC06.pdf][Here]] 
+is the link.
+
+* Chapter 2 The BCS theory
+** 2.1 Landau Fermi-liquid <2014-02-09 日>
+In a system of fermions, the ground states of the system has its Fermi momentum $\mathbf{p}_F$, which 
+is related to the total number of particles N in the system by:
+\begin{equation}
+N=\sum_{k,s}=\sum_s \frac{V}{(2\pi)^3}\int d^3k=\sum_s \frac{4\pi p_F ^3 V}{3 h^3}
+\end{equation}
+This equation holds because pauli exclusion principle guarantees that N is just the number of states 
+available in the system.

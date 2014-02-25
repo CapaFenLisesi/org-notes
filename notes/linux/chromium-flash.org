@@ -9,7 +9,6 @@ following is copy from [[http://askubuntu.com/questions/158388/how-do-i-make-chr
 + add the following code line to the file: =/etc/chromium-browser/default=
 #+BEGIN_SRC sh
 CHROMIUM_FLAGS="--ppapi-flash-path=/usr/lib/chromium-browser/plugins/libpepflashplayer.so --ppapi-flash-version=11.5.31.2"
-#
 #+END_SRC
 The version can be found in the file =mainfest.jason=, whinin the folder =PepperFlash=; just search "version" in it. 
 

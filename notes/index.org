@@ -1,9 +1,10 @@
 #+SETUPFILE: css/level-0.css
-#+TITLE: Home
+#+TITLE: A Ming's website
 * [[file:life/about-me.org][About me]]
 * [[file:c/index.org][C programming]]
 * [[file:emacs/index.org][Emacs and org-mode]]
 * [[file:fortran/index.org][Fortran programming]]
 * [[file:life/index.org][Life joy and complain]]
 * [[file:linux/index.org][Linux stuff]]
-* Physics study
+* [[file:physics/index.org][Physics study]]
+* [[file:todo/index.org][TODOs and quick notes]]

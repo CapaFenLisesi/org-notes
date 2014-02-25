@@ -2,3 +2,4 @@
 #+TITLE: Linux stuff
 * [[file:tips.org][Some linux tips]]
 * [[file:chromium-flash.org][Using chrome new flash version in chromium]]
+* [[file:install-skype-no-ads.org][Install skype no ads version]]

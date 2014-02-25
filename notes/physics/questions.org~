@@ -1,0 +1,11 @@
+#+TITLE: Physics questions
+#+SETUPFILE: ../css/level-1.css
+* TODO Particle-hole symmetry of graphene meanfield <2014-02-20 Thu>
++ One is the meanfield Hubbard, my first project
++ Another is meanfield negative hubbard superconductor, my second project.
+* TODO Why magnetic field breaks time-reversal symmetry? <2014-02-21 Fri>
+[[http://www.physicsforums.com/showthread.php%3Ft%3D473995][This]] thread and this [[http://en.wikipedia.org/wiki/T-symmetry][wiki]] entry answer most part of this problem.
+
+The magnetic field is always coupled to the momentum and angular momentum(spin) in the system. When we 
+say magnetic field break the TR, we mean the external magnetic field. Under TR, momentum and angular
+momentum changes sign, however the external magnetic field doesn't. So we say TR is broken.
