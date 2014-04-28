@@ -1,0 +1,10 @@
+#+TITLE: Multi-line comment and uncomment in emacs
+#+SETUPFILE: css/level-1.css
+* comment
+> Select the region, cusor should at the begining of the last line.
+> C-x r t
+> Insert comment symbol
+* anti-comment
+> Select the region, cusor should right after the comment symbol
+> C-x r k
+

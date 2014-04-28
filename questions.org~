@@ -1,0 +1,23 @@
+#+TITLE: Questions to think
+#+SETUPFILE: ../css/level-1.css
+* Physics
+** TODO Particle-hole symmetry of graphene meanfield
++ One is the meanfield Hubbard, my first project
++ Another is meanfield negative hubbard superconductor, my second project.
+** DONE Why magnetic field breaks time-reversal symmetry?
+The magnetic field is always coupled to the momentum and angular momentum(spin) in the
+system. When we say magnetic field break the TR, we mean the external magnetic field. Under TR,
+momentum and angular momentum changes sign, however the external magnetic field doesn't. So we
+say TR is broken. This can also be seen in the Hamiltonian, when magnetic field is present, the
+momentum operator $\hat{p} \to \hat{p}-q\bf{A}$. So $TR: \hat{p}-q\bf{A} \to -\hat{p}-q\bf{A}$.
+
+We can also construct TR operators, to see if it commutes with hamiltonian. The TR operator for
+spin-1/2 system is $e^{-i \pi S_y}K$.
+** TODO Is QHE really not break some symmetry?
+This question arise from the Qi and Zhang's [[http://scitation.aip.org/content/aip/magazine/physicstoday/article/63/1/10.1063/1.3293411][Physics today paper]], in which they said that "The quantum 
+Hall (QH) state, discovered in 1980,1 provided the first example of a quantum state that has no
+spontaneously broken symmetry." However, I rememeber reading *seminar 2004 QHE* that it did
+break some translational symmetry.  
+** TODO What is a s-like and p-like band?
+Is HgTe it self a topological insulator? Why or why not? 
+** TODO Why can persistent current persistent in the samll circular device?

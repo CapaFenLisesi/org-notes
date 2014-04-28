@@ -1,0 +1,93 @@
+#+TITLE: Install emacs and org-mode
+#+SETUPFILE: ../css/level-1.css
+* install
+** get emacs
+Usually we don't need the graphic mode, so we only need to install emacs 
+without x. To do this, typing:
+#+begin_src sh
+sudo apt-get install emacs23-nox
+#+end_src
+Also the newest version of emacs can be installed via ppa in ubuntu. Excute the 
+command in terminal:
+#+begin_src sh
+sudo add-apt-repository ppa:cassou/emacs
+sudo apt-get update
+sudo apt-get install emacs24-nox
+#+end_src 
+** check version
+you can check version by typing:
+#+begin_src sh
+emacs --version
+#+end_src
+** configure emacs
+If you happen to install emacs with graphic component, when you type /emacs/,
+the default mode is just open the graphic window, which of course is not cool.
+You can enter /emacs -nw/ to open it in the terminal. Another way to do this
+is just edit the /.bashrc/ file with this:
+#+begin_src sh
+alias emacs='emacs -nw'
+#+end_src
+This will open emacs in terminal when typing /emacs/. If you really what to
+open emacs in GUI, you can do it by typing: /emacs23 -x/.
+
+
+After all, we won't use the menu bar in emacs-nox, so hide it:
+#+BEGIN_SRC emacs-lisp
+(menu-bar-mode 0)
+#+END_SRC 
+This is copy from [[http://bzg.fr/emacs-strip-tease.html][bzg-emacs-naked]].
+* update org to the newest version
+You have entered into org-mode when you are editing a org file. By typing *M-x*
+and then *org-version RET*. You can see that the default version is very old.So
+we need to update it to the newest.
+** install and configure
+The official guide says we should better stick to one install method. The method
+I choose it to use Org's git repository.
+First cd to the directory which you created to have org-mode installed. 
+#+begin_src sh
+cd /usr/local/org-mode
+sudo git clone git://orgmode.org/org-mode.git
+cd org-mode
+sudo make autoloads
+#+end_src 
+After installing, set the load-path in the file /.emacs/.
+#+begin_src emacs-lisp
+(add-to-list 'load-path "/usr/local/org-mode/org-mode/lisp")
+(add-to-list 'load-path "/usr/local/org-mode/org-mode/contrib/lisp" t)
+#+end_src
+** check version and begin to use
+Open and .org file and check if you have the new version installed.
+* configure the color theme of emacs
+The default color scheme in emacs is not very good. I like using solarized-theme,
+but even if the terminal is set to solarized-theme, emacs is not in the solarized
+mode.
+** download and install color-theme
+In emacs23, we need first download the color-theme package:[[http://download.savannah.gnu.org/releases/color-theme/][color-theme]]. Extract
+to any folder you like. Do the follow copy:
+#+begin_src sh
+cp color-theme.el ~/emacs.d/lisp
+cp -r themes ~/emacs.d/lisp
+#+end_src 
+Modify ~/.emacs, add the following code:
+#+begin_src emacs-lisp
+(add-to-list 'load-pat "~/.emacs.d/lisp")
+(require 'color-theme)
+(color-theme-initialize)
+#+end_src
+Type /eval-buffer/ to make the change take effect. Try *M-x color-theme-select*.
+** configure solarized theme
+At this stage, you have many color-themes to choose. However, no solarized.
+You can download [[https://github.com/sellout/emacs-color-theme-solarized][solarized]], extract it to ~/.emacs.d/lisp . Add the load-path
+of solarized:
+#+begin_src emacs-lisp
+(add-to-list 'load-path "~/.emacs.d/lisp/emacs-color-theme-solarized")
+(require 'color-theme-solarized)
+(color-theme-solarized-dark)
+#+end_src
+Enter *M-x eval-buffer* to make change to take effect. However, the backgroud is gray
+instead of dark blue.
+*** fix the problem
+We can easily fix this problem by edit /.bashrc/ file. Add this:
+#+begin_src sh
+export TERM="xterm"
+#+end_src

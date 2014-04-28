@@ -1,0 +1,7 @@
+#+SETUPFILE: css/level-1.css
+#+TITLE: Some linux tips
+* VLC 乱码解决方案
+主要是编码改成中文编码，Input / Codecs -> Subtitles codecs ->Subtitles
+Subtitles text encoding设置为Universal Chinese (GB18030)，同时取消 UTF-8 
+subtitlesautodetection前面的勾。
+

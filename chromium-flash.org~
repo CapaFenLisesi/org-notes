@@ -1,0 +1,15 @@
+#+TITLE: Let chromium uses chrome's flash
+#+DATE: <2014-02-06 Thu 23:03>
+#+SETUPFILE: ../css/level-1.css
+Google-chrome have latest flash version. So I want to use it in the chromium. The 
+following is copy from [[http://askubuntu.com/questions/158388/how-do-i-make-chromium-use-flash-from-google-chrome][AskUbuntu]].
+
++ extract =libpepflashplayer.so= from =/opt/google/chrome/PepperFlash=
++ copy it to /usr/lib/chromium-browser/plugins
++ add the following code line to the file: =/etc/chromium-browser/default=
+#+BEGIN_SRC sh
+CHROMIUM_FLAGS="--ppapi-flash-path=/usr/lib/chromium-browser/plugins/libpepflashplayer.so --ppapi-flash-version=11.5.31.2"
+#+END_SRC
+The version can be found in the file =mainfest.jason=, whinin the folder =PepperFlash=; just search "version" in it. 
+
+Finally, open chromiun type =chrome://plugins= to enable it. 

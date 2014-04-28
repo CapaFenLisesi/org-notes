@@ -1,0 +1,35 @@
+#+SETUPFILE: css/level-0.css
+#+TITLE: A Ming's Website
+* [[file:about-me.org][About Me]]
+* C Language
+** [[file:c-notes.org][C Notes]]
+* Emacs and Vim
+** [[file:install-emacs.org][Install emacs and org-mode]]
+** [[file:multiline-comment.org][Multiline-comment]]
+** [[file:org-mode-publish-configuration.org][Org-mode publish configuration]]
+** [[file:build-github-website.org][Build a personal website on github]]
+** [[file:emacs-notes.org][Emacs notes]]
+
+* Fortran Programming
+** [[file:interface.org][Fortran interface]]
+** [[file:omp-quick-notes.org][OpenMP quick notes]]
+* Life Joy and Complain
+** [[file:da-nian-chu-er.org][大年初二记事]]
+** [[file:yi-xie-gan-xiang.org][离家前两天的一些感想]]
+** [[file:ren-he-dian-nao.org][人和电脑]]
+** [[file:kuai-le-shi-shen-me.org][快乐是什么？]]
+** [[file:wo-yao-xue-shu-xue-la.org][shuxue]]
+* Linux Stuff
+** [[file:tips.org][Some linux tips]]
+** [[file:chromium-flash.org][Using chrome new flash version in chromium]]
+** [[file:install-skype-no-ads.org][Install skype no ads version]]
+* Physics
+** [[file:AR-wiki.org][Andreev reflection on wiki]]
+** [[file:superconductivity-notes.org][Notes on superconductivity study]]
+** [[file:questions.org][Questions need to consider]]
+** [[file:quick-notes.org][Quick notes]]
+* Todos and Quick notes
+** [[file:questions.org][Questions to think]]
+** [[file:articles.org][Articles to read]]
+** [[file:notes.org][Things to do tonight]]
+** [[file:quick-notes.org][Quick notes]]

@@ -1,0 +1,36 @@
+#+TITLE: Quick notes
+#+SETUPFILE: ../css/level-1.css
+* Physics
+** Kramers' theorem
+Given a Hamiltonian with time-reversal symmetry, if a state is the Hamiltonian's eigenstate, then its time
+reversal state is also an eigenstate of the Hamiltonian with the same eigenvalue; besides, the two states 
+is orthogonal.
+
+* Linux
+** Chrome excute path
+    just type =chrome://version= 
+** Turn off screen
+use =xset dpms force off=
+** Custom screen brightness
+Install =xbacklight= by using =apt-get install xbacklight=, then set the brightness using 
+=xbacklight -set 30=. More convenient way to do is to set shortcuts: =xbacklight -inc 10=
+and =xbacklight -dec 10=. Use =xbacklight -get= to see the current brighness.
+** Login to ubuntu-2d by default
+Config =/etc/lightdm/lightdm.conf=, add this line =user-session=ubuntu-2d=. Or use this:
+=sudo /usr/lib/lightdm/lightdm-set-defaults -s ubuntu-2d= to set.
+** Quick access to folders
+Set the environment variable in =.bashrc= files, for example:
+#+BEGIN_SRC sh
+n="/home/luming/Documents/org/notes/"
+cd $n
+#+END_SRC
+To quick access to current folder, set:
+#+BEGIN_SRC sh
+p=$(pwd)
+cd $p
+#+END_SRC
+
+** All commands not working 
+This is because the environment variable settings, excute this:
+=export PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin=
+will fix the problem.

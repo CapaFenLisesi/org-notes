@@ -1,0 +1,5 @@
+#+TITLE: A wiki article about Andreev Reflection and Crossed Andreev Reflection
+#+DATE: <2014-02-09 日>
+#+SETUPFILE: css/level-1.css
+The article is [[http://en.wikipedia.org/wiki/Andreev_reflection][Here]].
+* TODO Figure out the energy, momentum and spin change at the interface.

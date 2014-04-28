@@ -1,0 +1,16 @@
+#+TITLE: About me
+#+SETUPFILE: css/level-1.css
+* Educational backgroud
+I obtain my bachelor degree at [[http://physics.nju.edu.cn][department of physics]], [[http://www.nju.edu.cn][Nanjing
+University]] from 2008 to 2012.
+Now I am a second year graduate student at [[http://icqm.pku.edu.cn][ICQM]], [[http://www.pku.edu.cn][Peking University]]. My
+research  interest is theoretical condense matter physics.
+
+* About this site
+I creat this site for storing my personal notes, hopefully they can be
+my and your reference sometime. This site is created using [[http://www.gnu.org/software/emacs/][GNU emacs]]
+and [[http://orgmode.org/][Org mode]], the source code is available on my [[https://github.com/digdig/org-notes][GitHub page]].
+
+* Contact me
+You can add me on google plus or skype; the user name of both is *_hiluming_*.
+You can also send me email, my email address: *_hiluming@gmail.com_*.

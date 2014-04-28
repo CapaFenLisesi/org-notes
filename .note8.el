@@ -6,22 +6,22 @@
       '(
 ;;first, the notes component
 	("org-notes"
-	 :base-directory "~/Documents/org/notes/"
+	 :base-directory "~/Documents/org/"
 	 :base-extension "org"
-	 :publishing-directory "~/Documents/digdig.github.io"
+	 :publishing-directory "~/Documents/digdig.github.io/"
 	 :recursive t
 	 :publishing-function org-html-publish-to-html
 	 :headline-levels 4             ; Just the default for this project.
 	 :auto-preamble nil
 	 :htmlize-source t ;this set source-code highlighting in html publish
 	 :org-html-head-include-default-style nil ;set default html style to nil
-	 :auto-sitemap t   ;sitemap
-	 :sitemap-filename "sitemap.org"
-	 :sitemap-title "Sitemap"
+;	 :auto-sitemap t   ;sitemap
+;	 :sitemap-filename "sitemap.org"
+;	 :sitemap-title "Sitemap"
 	 )
 ;;second,the static component
 	("org-static"
-	 :base-directory "~/Documents/org/notes"
+	 :base-directory "~/Documents/org/"
 	 :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf"
 	 :publishing-directory "~/Documents/digdig.github.io"
 	 :recursive t
